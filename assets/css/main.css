@@ -1,0 +1,35 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+}
+
+a {
+	color:red;
+}
+
+.sleeping{
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	border:5px solid red;
+}
+
+.sleeping img  {
+	width:100%;
+	display: block;
+}
+
+.links {
+	border:1px solid blue;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.links a {
+	margin-left:30px;
+	text-decoration:none;
+	color:white;
+	text-shadow:0px 0px 20px deeppink;
+	display: block;
+}
