@@ -1,0 +1,458 @@
+html {
+	background-image: url("../images/background.jpg");
+}
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+}
+
+.menu {
+	width: 80px;
+	height: 80px;
+	background-color:black;
+	opacity: 60%;
+	position:fixed;
+	top:20px;
+	right: 20px;
+	padding: 5px;
+	border-radius: 50px;
+}
+
+.container{
+	color: #A2F2CD;
+	display: flex;
+	flex-grow: wrap;
+	font-size: 10px;
+	background-color: black;
+	padding: 10px;
+	word-wrap: 100%;
+	letter-spacing: 1.5px;
+}
+
+.w1of3{
+	width: 33.33%;
+}
+.w2of3{
+	width: 66.66%;
+}
+.w3of3{
+	width: 100%;
+}
+
+.title{
+	width: 25vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:100px;
+}
+
+.title img  {
+	width:90%;
+	display: block;
+	border-radius: 50%;
+	box-shadow:0px 0px 15px lightgrey;
+
+}
+
+/*bird animation*/
+.bird1a {
+	transform: rotate(-25deg);
+}
+
+.bird1a img {
+	width: 17vw;
+	margin-left: 75vw;
+	margin-top: 6vw;
+	opacity: 80%;
+	animation-name: floating;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+/*end bird animation*/
+
+/*meditation*/
+
+.glowtext {
+	color: white;
+	text-shadow: 1px 1px 2px white, 0 0 25px white;	
+}
+
+.lighttext {
+	color: white;
+	opacity: 50%;
+}
+
+.glow1 {
+	font-size: 6vw;
+	margin-left: 11vw;
+	margin-top: -6.5vw;
+	text-shadow: 1px 1px 2px white, 0 0 25px white;
+}
+
+.light1 {
+	font-size: 4vw;
+	margin-left: 9vw;
+	margin-top: -15vw;
+}
+
+.glow2 {
+	font-size: 2.5vw;
+	margin-left: 60vw;
+	margin-top: -3.3vw;
+	text-shadow: 1px 1px 2px white, 0 0 25px white;
+}
+
+.light2 {
+	font-size: 2.5vw;
+	margin-left: 58vw;
+	margin-top: 10vw;
+}
+
+
+.rings {
+	height: 50vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 80%;
+	animation-name: floatinga;
+	animation-iteration-count: infinite;
+	animation-duration: 5.5s;
+	animation-timing-function: ease-in-out;
+}
+@keyframes floatinga {
+    from { transform: translate(0, 0px); }
+    65%  { transform: translate(0, -20px); }
+    to   { transform: translate(0, 0px); }    
+}
+
+.glow3 {
+	font-size: 7vw;
+	margin-left: 9vw;
+	margin-top: -8vw;
+	text-shadow: 1px 1px 2px white, 0 0 25px white;
+}
+
+.light3 {
+	font-size: 6vw;
+	margin-left: 7vw;
+	margin-top: 0vw;
+}
+
+
+.container2{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5vw;
+	word-wrap: 100%;
+}
+
+.w1of2{
+	width: 50%;
+}
+
+.w1of2{
+	width: 50%;
+}
+
+.item img {
+	width: 100%;
+} 
+
+.name {
+	color: white;
+	font-size: 1.5vw;
+	text-align: right;
+	padding-left: 28vw;
+	position: absolute;
+	padding-top: 8vw;
+}
+
+/* YOU */
+.YOU h1 {
+  color: #ffffff;
+  font-size: 5vw;
+  padding-left: 10vw;
+  position:absolute; top: 134vw; left: 10vw;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid pink; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .20em; 
+  animation: 
+    typing 4s steps(40, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 20% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #A8175D }
+}
+
+.birds {
+	width: 15vw;
+	opacity: 100%;
+	position: absolute;
+	padding-top: 30vw;
+	animation-name: floating;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.light4 {
+	font-size: 5vw;
+	margin-left: 62vw;
+	margin-top: 10vw;
+}
+
+.glow4 {
+	font-size: 5vw;
+	margin-left: 9vw;
+	margin-top: 5vw;
+	text-shadow: 1px 1px 2px white, 0 0 25px white;
+}
+
+.light5 {
+	font-size: 5vw;
+	margin-left: 56vw;
+	margin-top: 35vw;
+}
+
+.glow5 {
+	font-size: 6.5vw;
+	margin-left: 9vw;
+	margin-top: 4vw;
+	text-shadow: 1px 1px 2px white, 0 0 25px white;
+}
+
+.glow6 {
+	font-size: 2.5vw;
+	margin-left: 76vw;
+	margin-top: -3.2vw;
+	text-shadow: 1px 1px 2px white, 0 0 25px white;
+}
+
+.light6 {
+	font-size: 2.5vw;
+	margin-left: 78vw;
+	margin-top: 8vw;
+}
+
+
+.abird {
+	margin-left: 9vw;
+	margin-top: -5vw;
+	animation-name: floating;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+}
+
+
+.glow7 {
+	font-size: 2.5vw;
+	margin-left: 10vw;
+	margin-top: -3vw;
+	text-shadow: 1px 1px 2px white, 0 0 25px white;
+}
+
+.light7 {
+	font-size: 2.5vw;
+	margin-left: 9vw;
+	margin-top: 30vw;
+}
+
+
+.light8 {
+	font-size: 5vw;
+	margin-left: 42vw;
+	margin-top: 30vw;
+}
+
+.glow8 {
+	font-size: 5vw;
+	margin-left: 9vw;
+	margin-top: 5vw;
+	text-shadow: 1px 1px 2px white, 0 0 25px white;
+}
+
+
+.diamond {
+	width: 90vw;
+	z-index: -1;
+	position: absolute;
+	margin-top: -35vw;
+	margin-left: 50vw;
+}
+
+.titleend {
+	height: auto;
+	margin-left: 4vw;
+	margin-top: 10vw;
+	position: absolute;
+	padding-bottom: 4vw;
+}
+
+.titleend img {
+	width: 10vw;
+
+}
+
+.abird1 {
+	margin-left: 70vw;
+	margin-top: 10vw;
+	animation-name: floating;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+.semititle {
+	line-height: 115%;
+}
+
+.essay {
+  width: 33.3%;
+  height: 100vh;
+  line-height: 120%;
+  overflow: scroll;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  right: 0;
+  top: 0;
+  z-index: 2;
+  margin-right: -50%;
+  transition: 1s;
+}
+
+.essay.slide {
+  margin-right: 0;
+  transition: 1s;
+}
+
+.essay h1 {
+  font-size: 4.5vw;
+  padding-left: 25px;
+  padding-top: 8vw;
+  padding-bottom: 1vw;
+  color: white;
+  font-style: bold;
+
+
+}
+
+.essay p {
+  font-size: 1.3vw;
+  padding: 22px;
+  color: white;
+}
+
+
+.close {
+  	width: 80px;
+  	height: 80px;
+  	border-radius: 50%;
+	top: 20px;
+	right: 20px;
+	padding: 5px;
+ 	position: fixed;
+ 	z-index: 3;
+  	cursor: pointer;
+  	display: none;
+}
+
+.close.show {
+  display: block;
+}
+
+.close:hover {
+ 
+  opacity: 50%;
+
+}

@@ -1,35 +1,101 @@
+html {
+	background-image: url(file:///Users/mizuki_niino/Document/Monash%20Uni%203/CDS3001/Workshop/Mizukiniino.github.io/assets/images/Background-noise.jpg);
+ 	background-size: cover;
+}
+
 body {
-	font-family: Helvetica,Arial,sans-serif;
-	font-size: 32px;
+	font-family: "Agency FB",Agency,serif;
+	letter-spacing: 2px;
+	font-size: 30px;
+	cursor: crosshair;
 }
 
 a {
 	color:red;
 }
 
-.sleeping{
+.TV{
 	width:500px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:20px;
-	border:5px solid red;
-}
+  }
 
-.sleeping img  {
+.TV img  {
 	width:100%;
 	display: block;
+	cursor: grabbing;
 }
 
 .links {
-	border:1px solid blue;
 	margin-left:20px;
 	margin-right:20px;
+	position: fixed;
 }
 
 .links a {
 	margin-left:30px;
 	text-decoration:none;
 	color:white;
-	text-shadow:0px 0px 20px deeppink;
+	text-shadow:0px 0px 20px lightgrey;
 	display: block;
 }
+
+.links a:hover { 
+	color:black;
+}
+
+.icon{
+	width: 30px;
+	height: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-250px;
+}
+
+.name {
+	margin-top:200px;
+	font-size: 100px;
+	text-align: center;
+	text-shadow: 0px 0px 20px deeppink;
+}
+
+.block {
+	text-transform: uppercase;
+	bottom:10px;
+	background-color: black;
+	padding: 20px;
+}
+
+
+.slide {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.slide span {
+	width: 100vw;
+  display: inline-block;
+  padding-left: 80%;
+  animation: slide 20s linear infinite;
+	text-transform: uppercase;
+	font-family: "Courier New", Courier, monospace;
+	color: white;
+	font-size:10px;
+	text-align:left;
+	bottom:10px;
+	padding: 10px;  
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+

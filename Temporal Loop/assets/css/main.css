@@ -1,0 +1,276 @@
+
+body {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 32px;
+	background: #212121;
+ 	height: 100%;
+}
+
+a {
+	color:red;
+}
+
+.container{
+	color: #A2F2CD;
+	display: flex;
+	flex-grow: wrap;
+	font-size: 10px;
+	background-color: black;
+	padding: 10px;
+	word-wrap: 100%;
+	letter-spacing: 1.5px;
+}
+
+.w1of3{
+	width: 33.33%;
+}
+.w2of3{
+	width: 66.66%;
+}
+.w3of3{
+	width: 100%;
+}
+
+.title {
+	font-size: 24vw;
+	text-align: center;
+	color: #212121;
+  	-webkit-text-stroke: 4px #FAFAFA;
+}
+
+.header {
+	color: white;
+	cursor: pointer;
+	margin-left: 2vw;
+}
+.header:hover { 
+	color: blue;
+}
+
+
+.toggle {
+	max-width: 70vw;
+	padding: 30px;
+	margin: 0 auto;
+	line-height: 1.5;
+	border-top:3px solid #FAFAFA;
+	color: white;
+	cursor: pointer;
+	display: none;
+}
+
+.nutritions{
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.Range {
+	color: white;
+	cursor: pointer;
+	margin-top: 3vw;
+	margin-left: 2vw;
+}
+
+.box {
+	max-width: 70vw;
+	padding-top: 50vw;
+	padding-bottom: 5vw;
+	position: absolute;
+	margin: 0 auto;
+	position: static;
+	font-size: 30px;
+	line-height: 1.5;
+	perspective: 400px;
+	color: #FAFAFA;
+}
+
+.future {
+	width:100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2vw;
+	position: absolute;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+.popup-link {
+	color: #F24963;
+	cursor: pointer;
+}
+
+.p-text {
+	cursor: pointer;
+	position: fixed;
+	top:0px;
+	left:0px;
+	width: 100%;
+	height: 100vh;
+	display: none;
+	mix-blend-mode: multiply;
+}
+
+.pill {
+	width: 250px;
+	position: fixed;
+	z-index: 3;
+	cursor: pointer;
+	display: none;
+}
+
+.pill1 {
+	bottom: 8vw;
+	left: 20%;
+	transform: rotate(315deg);
+}
+
+.pill2 {
+	bottom: 15vw;
+	left: 35%;	
+}
+
+.pill3 {
+	bottom: 5vw;
+	left: 70%;
+	transform: rotate(30deg);		
+}
+
+.p-100g {
+	font-size:30vw;
+	text-align: center;
+	color: #F01195;
+	text-shadow: 1px 1px 2px white, 0 0 25px white;
+}
+
+.p-13types {
+	font-size:25vw;
+	text-align: center;
+	color: #0CB7ED;	
+	text-shadow: 1px 1px 2px white, 0 0 25px white;
+}
+
+.p-298g {
+	font-size:30vw;
+	text-align: center;
+	color: #F05000;	
+	text-shadow: 1px 1px 2px white, 0 0 25px white;
+}
+
+.show {
+	display: block;
+}
+
+
+.li {
+	display: block;
+	position: absolute;
+	top: 10vw;
+	z-index: 1;
+}
+
+.bottole{
+	padding-left: 24vw;
+	width: 80%;
+	padding-top: 17vw;
+}
+
+#floating {
+    transform: perspective(525px) translateZ(100px)
+        rotateX(18deg) rotateY(-20deg);
+    transition: all 300ms linear 0s;
+    animation: pers 2s infinite alternate;
+	}
+
+@keyframes pers {
+  0% {
+transform: perspective(525px) translateZ(100px)
+          rotateX(18deg) rotateY(-19deg);
+  }
+  20% {
+transform: perspective(525px) translateZ(100px)
+          rotateX(35deg) rotateY(-24deg);
+  }
+  50% {
+transform: perspective(525px) translateZ(100px)
+          rotateX(5deg) rotateY(-25deg);
+  }
+    70% {
+transform: perspective(525px) translateZ(100px)
+          rotateX(-15deg) rotateY(-19deg);
+  }
+  100% {
+transform: perspective(525px) translateZ(100px)
+          rotateX(1deg) rotateY(-5deg);
+  }  
+}	
+
+.icon {
+
+
+}
+
+
+
+
+

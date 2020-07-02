@@ -1,0 +1,66 @@
+body {
+	background-color: #F28DBC;
+	font-family: Arial;
+}
+
+.bg {
+	text-align: center;
+	text-shadow:20px 0px 30px red;
+}
+
+.bg.one {
+	
+}
+
+.bg.two {
+
+}
+
+.bg.three {
+
+}
+
+.bg.four {
+
+}
+
+.mid {
+	color: white
+}
+
+.mid.one {
+	color: white
+}
+
+.mid.two {
+	color: #4ECBD9
+}
+
+.mid.three {
+	color: #F2CD5C
+}
+
+.mid.four {
+	color: #F28DBC
+}
+
+.text {
+	font-size: 50px;
+}
+
+.text.one {
+	font-size: 30px;
+}
+
+.text.two {
+	font-size: 100px;
+}
+
+.text.three {
+	font-size: 60px;
+}
+
+.text.four {
+	font-size: 300px;
+	line-height: 235px;
+}

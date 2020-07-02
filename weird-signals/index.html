@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Voice Assistant</title>
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+  	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
+  	<script src="assets/js/jquery-3.4.1.min.js"></script>
+  	<script src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <!-- DO NOT REMOVE ABOVE -->
+    <!-- start here -->
+
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+        })
+
+         document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+
+    </script>  
+
+
+
+
+    <!-- menu -->
+
+    <div class="menu">
+      <img src="assets/images/angel.svg">
+    </div>
+
+    <div class="close">
+      <img src="assets/images/angel.svg">
+    </div>
+
+    <!-- end menu -->
+
+
+    <!-- copyright-->
+
+    <div class="copy container">
+      <div class="item w1of3">
+        MADA
+      </div>
+      <div class="item w2of3">
+        Weird Signals
+      </div>
+      <div class="item w3of3">
+        (cc) 2020 Mizuki Niino dPub
+      </div>
+    </div>
+
+    <!-- end copyright -->
+
+    
+    <!-- title -->
+
+    <div class="title">
+      <img src="assets/images/Voice Assistance.jpg">
+    </div>
+
+    <!-- end title -->
+
+    <!-- 7 birds images -->
+
+    <div class="bird1a">
+      <img src="assets/images/1a.png">
+    </div>
+
+    <!-- end 7 birds images -->
+
+
+
+
+    <!-- meditation -->
+    
+    <div class="lighttext">
+      <div class="light1">
+        Hi there.
+      </div>  
+    </div>
+    
+    <div class="glowtext">
+      <div class="glow1">
+        Hi there.
+      </div>  
+    </div>
+
+    <div class="lighttext">
+      <div class="light2">
+        What can I help you with?
+      </div>  
+    </div>
+    
+    <div class="glowtext">
+      <div class="glow2">
+        What can I help you with?
+      </div>  
+    </div>
+
+    <img class="rings" src="../weird-signals/assets/images/rings.png">
+
+
+    <div class="lighttext">
+      <div class="light3">
+        I am here with you.
+      </div>  
+    </div>
+    
+    <div class="glowtext">
+      <div class="glow3">
+        I am here with you.
+      </div>  
+    </div>
+
+
+    <div class="copy container2">
+      <div class="item w1of2">
+        <div class="name"> YOUR NAME</div>
+        <div class="birds">
+          <img src="../weird-signals/assets/images/birds.png">
+        </div>        
+        <img src="../weird-signals/assets/images/frame.png">
+
+       <div class="YOU">
+          <h1>YOU</h1>
+       </div>
+
+      </div>
+      <div class="item w1of2">
+        <img src="../weird-signals/assets/images/angel.png">
+      </div>
+    </div>  
+
+    <div class="lighttext">
+      <div class="light4">
+        Are you here?
+      </div>  
+    </div>
+
+    <div class="glowtext">
+      <div class="glow4">
+        Yes, I’m your assistant 24/7.
+      </div>  
+    </div>   
+
+
+    <div class="lighttext">
+      <div class="light5">
+        Do you love me?
+      </div>  
+    </div>
+
+    <div class="glowtext">
+      <div class="glow5">
+        I enjoy spending quality <br> time with you.
+      </div>  
+    </div>   
+
+    <div class="lighttext">
+      <div class="light6">
+        I’m listening...
+      </div>  
+    </div>
+    
+    <div class="glowtext">
+      <div class="glow6">
+        I’m listening...
+      </div>  
+    </div>
+
+    <div class="abird">
+      <img src="assets/images/abird.png">
+    </div>
+
+    <div class="lighttext">
+      <div class="light7">
+        I hope you’re staying safe.
+      </div>  
+    </div>
+    
+    <div class="glowtext">
+      <div class="glow7">
+        I hope you’re staying safe.
+      </div>  
+    </div>
+
+    <div class="lighttext">
+      <div class="light8">
+        Can you cheer me up?
+      </div>  
+    </div>
+    
+    <div class="glowtext">
+      <div class="glow8">
+        You seem lack of sleeping. <br> Try sleep at 12 A.M.
+      </div>  
+    </div> 
+
+    <!-- end meditation -->
+
+    <div class="diamond">
+      <img src="../weird-signals/assets/images/diamond.png">
+    </div>
+
+    <div class="titleend">
+      <img src="assets/images/assisstant.png">
+    </div>
+
+    <img class="abird1" src="assets/images/abird.png">
+
+  <div class="essay">
+    <h1 class="semititle">Voice <br> Command</h1>
+
+      <p>Voice Command is with Voice Control you can navigate and interact with your device using your voice to tap, swipe, type, and more. 
+      When you hear Siri or Alexa, do you imagine a robot or a human appearance? Even we understand the response is structured Ai; we tend
+      to create the personification of voice control in our heads. This anthropomorphism could be felt as Guardian Spirits that protect and watch over you all the time. Ironically, it has still relied on actual human voice for the first time. Floating and smooth effect makes your Guardian Spirits are surrounding you every time and supporting you.
+      </p>
+    <br> <br>
+  </div>
+
+
+
+    <!-- DO NOT REMOVE BELOW -->
+    <!-- end here -->
+  </body>
+</html>
+

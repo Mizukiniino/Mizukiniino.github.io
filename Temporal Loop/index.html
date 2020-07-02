@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2050 Temporal Loop</title>
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+  	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
+  	<script src="assets/js/jquery-3.4.1.min.js"></script>
+  	<script src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <!-- DO NOT REMOVE ABOVE -->
+    <!-- start here -->
+
+  <!-- cursor editing-->
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+        })
+
+         document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+
+    </script>  
+
+    <!-- cursor end-->
+
+     <!-- copyright-->
+
+    <div class="copy container">
+      <div class="item w1of3">
+        MADA
+      </div>
+      <div class="item w2of3">
+        Weird Signals
+      </div>
+      <div class="item w3of3">
+        (cc) 2020 Mizuki Niino dPub
+      </div>
+    </div>
+
+    <!-- end copyright -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+</style>
+
+<div class="title">
+    Perfect Meal
+</div>
+
+    <div class="grid">
+      <div class="col w-1of1">
+        <div class="content">
+
+          <!-- start toggle -->
+          <div class="header h-1">
+            <div>Description</div>
+          </div>
+          <div class="toggle t-1">
+            You don't need to care about food anymore. We found the best nutrition analysed by your DNA. Drink our supplement three times a day, and you are released from wasting time by eating food.
+          </div>
+
+          <div class="header h-2">
+            <div>Nutrition</div>
+          </div>
+          <div class="toggle t-2">
+            <image class=nutritions>
+              <img src="assets/images/Nutritions.png">
+            </image>
+          </div>
+
+          <div class="header h-3">
+            <div>History of Year 2020</div>
+          </div>
+          <div class="toggle t-3">
+            In 2020, Natural was a buzz term at food marketers, and they produced existed "natural food." Human in 2020 enjoyed fruit, vegetable, animal meats that they destroyed. Now in 2050, we don't need to worry about natural. We can protect natural resources, and we can get perfect daily nutritions by three capsules.
+          </div>
+
+
+          <!-- end toggle -->
+
+<div class="Range">
+ <div>Our Range</div>
+</div>
+
+<img class="future" src="../Temporal Loop/assets/images/future.jpg">
+
+<!-- start floating -->
+
+<ul>
+    <li>
+    <div id="floating" class="icon">
+      <img class="bottole" src="../Temporal Loop/assets/images/bottole.png" width="800">
+    </div>
+    </li> 
+</ul>
+
+<!-- End floating -->
+
+<div class="box">
+  <p class="description">It would recharge your body when simply you took a <span class="l-morning popup-link">morning</span>, <span class="l-lunch popup-link">lunch</span> and <span class="l-dinner popup-link">dinner</span> pill. Those three pills are 2000 kcal which contain <span class="l-100g popup-link">100g</span> of protein, 81g of fat, including omega 3, 280g of sugar, 20.3mg of vitamin E, <span class="l-13types popup-link">13 types</span> of minerals, and <span class="l-298g popup-link">29.8g</span> of fiber.
+  </p>
+</div>
+
+<div class="pill1 pill"><img src="assets/images/pill1.png" width="200"></div>
+<div class="pill2 pill"><img src="assets/images/pill2.png" width="200"></div>
+<div class="pill3 pill"><img src="assets/images/pill3.png" width="200"></div>
+
+<div class="p-100g p-text">100g</div> 
+<div class="p-13types p-text">13 types</div> 
+<div class="p-298g p-text">29.8g</div> 
+
+
+    <!-- DO NOT REMOVE BELOW -->
+    <!-- end here -->
+  </body>
+</html>
